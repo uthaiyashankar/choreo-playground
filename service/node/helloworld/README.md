@@ -8,4 +8,6 @@ npm install express
 npm install
 
 # Run application
+npm start 
+OR
 node app.js
