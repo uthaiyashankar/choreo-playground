@@ -17,25 +17,31 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		 
-		<dependency>
-			<!-- This is to automatically generate the openapi specification -->
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-			<version>2.2.0</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
+		<!-- Following dependencies are to automatically generate the openapi specification -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<!-- End of dependencies which are to automatically generate the openapi specification -->
+
+		<!-- Following dependencies are there to remove CVE issues from transitive dependencies -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<!-- End of dependencies which are there to remove CVE issues from transitive dependencies -->
 	</dependencies>
 
 	<build>
