@@ -31,4 +31,4 @@ http://localhost:8080/swagger-ui/index.html
 # Other details
 * Please note .choreo folder. Need the endpoints.yaml and openapi.yaml there
 * mvnw, .mvn files were generated and included from start.spring.io
-* 
+* .trivyignore file to list down all CVE which are failing in trivy scans
