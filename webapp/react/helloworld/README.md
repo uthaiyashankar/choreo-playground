@@ -7,6 +7,7 @@ npx create-react-app <directory>
 # Building
 ```
 npm install
+npm run build
 ```
 
 # Running 
@@ -20,8 +21,13 @@ http://localhost:3000/
 # Deploying in Choreo
 https://wso2.com/choreo/docs/develop-components/develop-a-web-application/
 
+## Using NodeJS buildpack
+Use the port as 8080
 
-
+## Using React-SPA buildpack
+- Build Command: `npm run build`
+- Build output directory: `build`
+- Node Version: `18`
 
 
 
